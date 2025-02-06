@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+#logo{
+    font-family: "Lobster", sans-serif;
+    font-size:xx-large;
+    margin-bottom: 10px;
+}
+@keyframes appear{
+    from{
+        opacity: 1;
+        transform: translateX(-200px);
+
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+    @keyframes appear2{
+        from{
+            opacity: 0;
+            transform: translateX(100px)
+    
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+
+}
+#slide {
+    animation-duration: 1s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      translate: 150vw 0;
+      scale: 200% 1;
+    }
+  
+    to {
+      translate: 0 0;
+      scale: 100% 1;
+    }
+  }
+
+
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      display: none;
+    }
+  
+    100% {
+      opacity: 1;
+      display: block;
+    }
+  }
+
+  @keyframes scale {
+    from {
+      opacity: 0;
+      scale: 0.5;
+    }
+  
+    to {
+      opacity: 1;
+      scale: 1;
+    }
+  }
+
+  body{
+    overflow-x: hidden;
+  }
+
+#scale{
+    animation: scale linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+
+
+#fade {
+    display: block;
+    animation: fade-in 1s ease-in forwards;
+  }
+
+
+#anim{
+    animation: appear2 linear;
+    animation-timeline: view();
+    animation-range: entry 10% cover 40%;
+}
+
+#anim2{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 10% cover 40%;
+}
+#head-main h2{
+    color: rgb(171, 60, 60);
+    font-weight: 600;
+    font-size: 5cap;
+
+}
+.head-para{
+     padding-left: 10%;
+}
+
+#div-main-inner{
+    width: 100%;
+    margin-top: 10%
+
+}
+.login-btn{
+    text-decoration: none;
+    font-size: large;
+    background-color: #FF8225;
+    color: black;
+    transition: transform .2s;
+    border-radius: 20px;
+    padding: 10px;
+    padding-left: 11%;
+    width: 30%;
+    
+
+}
+
+#div-main{
+    height: 65vh;
+}
+
+.login-btn:hover{
+    color: white;
+    background-color: black;
+    transform: scale(1.1);
+}
+.button-main{
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 15vh;
+}
+.login-link{
+    text-decoration: none;
+    font-size: large;
+    color: black;
+    margin-top: 2%;
+}
+.login-link:hover{
+    color: red;
+}
+.headings h2{
+    margin-left: 10%;
+}
+
+.card img{
+    height: 200px;
+}
+#icon-about{
+    padding: 10px;
+    height: 10%;
+    width: 10%;
+}
+.footer{
+    height: 30vh;
+    background-color: rgb(211, 211, 208);
+    
+}
+#first ul li{
+  list-style: none;
+  margin-bottom: 10px;
+  
+
+}
+#first{
+    display: flex;
+    justify-content: space-evenly;  
+    transition: transform .2s;
+    
+}
+#first li:hover{
+  transform: scale(1.1);
+}
+#logo-footer i{
+   margin-right: 20px;
+   margin-top: 50px;
+    
+}
+
+#icon:hover{
+  color: aliceblue;
+  
+}
+
+#nav-elem li a{
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  font-family: "Barlow", sans-serif;
+  transition: transform .2s;
+}
+#nav-elem li a:hover{
+  color: #FF8225;
+  transform: scale(1.1);
+}
+#nav-elem li{
+  margin-bottom: 10px;
+  margin-right: 55px;
+}
+#nav-elem {
+  margin-left: 27%;
+}
+#logo-footer i{
+  transition: transform .2s;
+}
+#logo-footer i:hover{
+  transform: scale(1.5);
+}
+
